@@ -2,10 +2,11 @@
 ignore =
     E501,
     E302,
-    W191
+    W191,
+    E126
 max-line-length = 200
 exclude =
-  migrations
+  migrations,
   __pychace__,
   manage.py,
   setting.py
