@@ -2,5 +2,14 @@ language: python
 python:
   - "3.6"
 
+services:
+  - "docker"
+
+before_script: pip install docker-compose
+
 script:
-  - docker-compose run --rm app sh -c "python manage.py test && flake8"
+  - - docker-compose run app sh -c "python manage.py test && flake8"
+
+#To ignore such error we can use ignore= E302, E501 in .flake8 file
+
+# Refer this link for more details - http://books.agiliq.com/projects/essential-python-tools/en/latest/linters.html
