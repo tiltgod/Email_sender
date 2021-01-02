@@ -17,5 +17,4 @@ class UserAdmin(BaseUserAdmin):
                      'password1', 'password2')}), )
     # add_fieldsets for add test_user_page_change
 
-
 admin.site.register(models.User, UserAdmin)
