@@ -11,7 +11,7 @@ def sendmail(request):
 
     send_mail(
         'Test',
-        'You are gay',
+        'test',
         'from@example.com',
         ['to@example.com'],
         fail_silently=False,
